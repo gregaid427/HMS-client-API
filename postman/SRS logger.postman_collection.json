@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "e8d3e183-4973-43b2-b0ac-d5d27383e1ca",
+		"name": "SRS logger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create logs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"user_id\": \"dasan-25\",\r\n    \"date\": \"zizu-21\",\r\n    \"time\": \"233 \",\r\n    \"activity\": \"233 \"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/log/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"log",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all logs by month and year",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"month\": \"9\",\r\n    \"year\": \"2022\"\r\n  \r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/log/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"log",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete log by month an dyear",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"month\": \"10\",\r\n    \"year\": \"year\"\r\n  \r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/log/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"log",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all log",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"user_id\": \"dasan-25\",\r\n    \"date\": \"zizu-21\",\r\n    \"time\": \"233 \",\r\n    \"activity\": \"233 \"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/log/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"log",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

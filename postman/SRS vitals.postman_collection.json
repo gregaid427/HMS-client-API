@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "03423c8b-153a-4c2d-887c-0629a0d3f254",
+		"name": "SRS vitals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create vitals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"patient_id\": \"dasan-25\",\r\n    \"user_id\": \"dasan-25\",\r\n    \"visit_id\": \"zizu-21\",\r\n    \"pressure\": \"233 \",\r\n    \"weight\": \"233 \",\r\n    \"bmi\": \"233\", \r\n    \"temperature\": \"233 \",\r\n    \"date\": \"21/02/1245\",\r\n    \"height\": \"233 \",\r\n    \"pulse_rate\": \"233  \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vitals/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vitals",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update vitals",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pressure\": \"7777\",\r\n    \"weight\": \"1233 \",\r\n    \"bmi\": \"1233\",\r\n    \"temperature\": \"1233\",\r\n    \"height\": \"123\",\r\n    \"pulse_rate\": \"1233\",\r\n    \"vitals_id\": \"iorp6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vitals/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vitals",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all vitals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/vitals/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vitals",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all vitals",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vitals/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vitals",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get vitals by params v.id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vitals_id\": \"8ax15\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vitals/8ax15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vitals",
+						"8ax15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete vitals by v.id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vitals_id\": \"kq528\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vitals/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vitals",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

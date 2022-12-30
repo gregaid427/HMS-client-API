@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "715c5ef3-4522-4509-8d4d-61dcbbadae56",
+		"name": "SRS patients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregod47@gmail.com\", \r\n     \"patient_id\": \"0\",\r\n    \"first_name\": \"dasan\",\r\n    \"last_name\": \"zizu\",\r\n    \"other_name\": \"goper\",\r\n    \"contact1\": \"233 021 552 0140\",\r\n    \"contact2\": \"233 021 552 0140\", \r\n     \"address\": \"Abesim No.56 central police station bonoman enclave\",\r\n    \"sex\": \"male\",\r\n    \"birth_date\": \"21/02/1245\",\r\n    \"relative_name\": \"bamaba gomez\",\r\n    \"relative_contact\": \"233 0251 015 \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregod47@gmail.com\",\r\n    \"first_name\": \"dasan\",\r\n    \"last_name\": \"zizu\",\r\n    \"other_name\": \"goper\",\r\n    \"contact1\": \"233 021 552 0140\",\r\n    \"contact2\": \"233 021 552 0140\",\r\n    \"sex\": \"male\",\r\n    \"birth_date\": \"21/02/1245\",\r\n    \"relative_name\": \"bamaba gomez\",\r\n    \"relative_contact\": \"233 0251 015 \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all patients",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patients/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get patients bynames",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"last_name\": \"zizu\",\r\n    \"first_name\": \"dasan\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patients/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete patients by p.id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": \"0\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "54cb27c8-ae0c-4fe9-b5c1-1211e062600d",
+		"name": "SRS consultation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create consult",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjMsInVzZXJfaWQiOiIyaDE1YnZ0IiwiZW1haWwiOiJncmVnb3J5QGdtYWlsLmNvbSIsIm5hbWUiOiJncmVnb3J5QGdtYWlsLmNvbSIsImNvbnRhY3QxIjoiMDI0MTEwMjAxMjU2IiwiY29udGFjdDIiOiIwMjAxNDUyNTk5NzgiLCJyb2xlIjoiQWRtaW4iLCJ2ZXJpZmllZCI6ImZhbHNlIn0sImlhdCI6MTY2NjYwMzYyM30.WxiTSAswZMqgLWprQAkMXGBGq-3K_PFEHAnX7vzh_WQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"patient_id\": \"dasan-25\",\r\n    \"user_id\": \"dasan-25\",\r\n    \"consult_id\": \"zizu-21\",\r\n    \"prognosis\": \"233 \",\r\n    \"diagnosis\": \"233 \",\r\n    \"prescription\": \"233\", \r\n    \"referral\": \"233 \",\r\n    \"date\": \"21/02/1245\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/consult/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"consult",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update consult",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n\r\n  \"consult_id\": \"73vqo\",\r\n  \r\n    \"prognosis\": \"updatec onsultsupdateco nsultsupdateconsults upda teconsul tsupdateco nsultsupd ateco nsults updatec onsultsupdate consu ltsup datec onsults updatec onsul ts upd atec onsultsupdateco nsul tsupd atecon sults upda teconsul tsupdateco nsultsupd ateco nsults updatec onsultsupdate consu ltsup datec onsults updatec onsul tsupdatec onsultsupdateco nsultsupdateconsults upda teconsul tsupdateco nsultsupd ateco nsults updatec onsultsupdate consu ltsup datec onsults updatec onsul ts upd atec onsultsupdateco nsul tsupd atecon sults upda teconsul tsupdateco nsultsupd ateco nsults updatec onsultsupdate consu ltsup datec onsults updatec onsul ts\",\r\n    \"diagnosis\": \"233 \",\r\n    \"prescription\": \"233\", \r\n    \"referral\": \"233 \",\r\n    \"date\": \"21/02/1245\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/consult/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"consult",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all consult",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/consult/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"consult",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all consult",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vitals/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vitals",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get consultby params",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/consult/d4q3c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"consult",
+						"d4q3c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete consult by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consult_id\": \"uxwtm\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/consult/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"consult",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

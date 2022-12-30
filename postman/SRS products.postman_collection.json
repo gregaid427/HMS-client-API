@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "933fb7b6-617a-4b0e-a0c9-3008dbc3f63e",
+		"name": "SRS products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjMsInVzZXJfaWQiOiIyaDE1YnZ0IiwiZW1haWwiOiJncmVnb3J5QGdtYWlsLmNvbSIsIm5hbWUiOiJncmVnb3J5QGdtYWlsLmNvbSIsImNvbnRhY3QxIjoiMDI0MTEwMjAxMjU2IiwiY29udGFjdDIiOiIwMjAxNDUyNTk5NzgiLCJyb2xlIjoiQWRtaW4iLCJ2ZXJpZmllZCI6ImZhbHNlIn0sImlhdCI6MTY2NjYwMzYyM30.WxiTSAswZMqgLWprQAkMXGBGq-3K_PFEHAnX7vzh_WQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"supplier\": \"dasan-25\",\r\n    \"contact1\": \"dasan-25\",\r\n    \"contact2\": \"dasan-25\",\r\n    \"contact3\": \"dasan-25\",\r\n    \"notes\": \"zizu-21\",\r\n\r\n   \r\n    \"user_id\": \"dasan-25\",\r\n    \"product_name\": \"zizu-21\",\r\n    \"stock_qty\": \"233 \",\r\n    \"price\": \"233\",\r\n    \"description\": \"233 \",\r\n    \"info\": \"233 \",\r\n    \"wholesale_price\": \"21/02/1245\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\": \"n0sow\",\r\n    \"user_id\": \"qqqqqqqqqqq gg dasan-25\",\r\n    \"product_name\": \"gggzizu-21\",\r\n    \"stock_qty\": \"233 \",\r\n    \"price\": \"233\",\r\n    \"description\": \"233 \",\r\n    \"info\": \"233 \",\r\n    \"wholesale_price\": \"21/02/1245\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update supplier",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"supplier_id\": \"t228zz\",\r\n    \"supplier\": \"wwwwww wwwwwdasan-25\",\r\n    \"contact1\": \"dasan-25\",\r\n    \"contact2\": \"dasan-25\",\r\n    \"contact3\": \"dasan-25\",\r\n    \"notes\": \"zizu-21\"\r\n    \r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/supplier",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all supplier",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/product/supplier",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all supplier",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/supplier/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"supplier",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product params",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/engs7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"engs7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get supplier params",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/supplier/mxu6wk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"supplier",
+						"mxu6wk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete supplier by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"supplier_id\": \"t625zm\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product/supplier",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product",
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

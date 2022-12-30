@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "e3f50276-e7fc-499e-8acf-e8ed01473e04",
+		"name": "SRS user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregory@gmail.com\",\r\n    \"password\": \"gregory@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregod47@gmail.com\",\r\n    \"name\": \"Gregory Aidoo\",\r\n    \"contact1\": \"024110201256\",\r\n    \"contact2\": \"020145259978\",\r\n    \"role\": \"Admin\",\r\n    \"user_id\": \"uu869\",\r\n    \"verified\": \"false\",\r\n    \"password\": \"gregoryd427@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"user_id\": \"yth4f\"\r\n \r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateusers",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregoryd47@gmail.com\",\r\n    \"name\": \"Gregory Aidoo\",\r\n    \"contact1\": \"024110201256\",\r\n    \"contact2\": \"020145259978\",\r\n    \"role\": \"Admin\",\r\n    \"user_id\": \"uu869\",\r\n    \"verified\": \"false\",\r\n    \"password\": \"gregoryd427@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZ3JlZ29kNDdAZ21haWwuY29tIiwiaWF0IjoxNjY1MzIwNjYyfQ.MFRDLQ1kj0chsbtQQmilUVIa0OLEP1YCS9SDCslM9v8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregoryd427@gmail.com\",\r\n    \"password\": \"hhh\",\r\n     \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiaWo4ZmJpdzBwcHU4ZHZiZTN0cmVlYmNoN3Q3a2U4NWZjZW1waGszNjJqaDFhZGFycHNrdnNvamNhZG4xemUwODA2Ym9hMSIsImlhdCI6MTY2Mzc2Mjk1MCwiZXhwIjoxNjYzNzY2NTUwfQ.8vMAgou4n8cVbTX2KcDrqo1uLPby2iqxEKONuA3GAc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify user email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregoryd427@gmail.com\",\r\n    \"password\": \"hhh\",\r\n     \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiaWo4ZmJpdzBwcHU4ZHZiZTN0cmVlYmNoN3Q3a2U4NWZjZW1waGszNjJqaDFhZGFycHNrdnNvamNhZG4xemUwODA2Ym9hMSIsImlhdCI6MTY2Mzc2Mjk1MCwiZXhwIjoxNjYzNzY2NTUwfQ.8vMAgou4n8cVbTX2KcDrqo1uLPby2iqxEKONuA3GAc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/gregoryd427@gmail.com/verify/ij8fbiw0ppu8dvbe3treebch7t7ke85fcemphk362jh1adarpskvsojcadn1ze0806boa1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"gregoryd427@gmail.com",
+						"verify",
+						"ij8fbiw0ppu8dvbe3treebch7t7ke85fcemphk362jh1adarpskvsojcadn1ze0806boa1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "password reset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"aaaaaaaaaaaaaaaa@gmail.com\"\r\n}\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/mailPasswordreset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"mailPasswordreset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "password reset-email sending",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gregoryd427@gmail.com\",\r\n    \"password\": \"hhh\",\r\n     \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiaWo4ZmJpdzBwcHU4ZHZiZTN0cmVlYmNoN3Q3a2U4NWZjZW1waGszNjJqaDFhZGFycHNrdnNvamNhZG4xemUwODA2Ym9hMSIsImlhdCI6MTY2Mzc2Mjk1MCwiZXhwIjoxNjYzNzY2NTUwfQ.8vMAgou4n8cVbTX2KcDrqo1uLPby2iqxEKONuA3GAc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/resetPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
